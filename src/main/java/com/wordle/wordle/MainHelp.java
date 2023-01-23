@@ -34,7 +34,9 @@ public class MainHelp {
 
     public static MainHelp getInstance() {
         if (INSTANCE == null)
+
             INSTANCE = new MainHelp();
+
         return INSTANCE;
     }
 
@@ -276,7 +278,8 @@ public class MainHelp {
                 CURRENT_ROW++;
                 CURRENT_COLUMN = 1;
             } else {
-                MainApplication.showToast();
+
+                MainApplication.showWarning();
             }
             if (ScoreWindow.resetGame.get()) {
                 resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
