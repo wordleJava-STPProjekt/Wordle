@@ -62,19 +62,19 @@ public class HelpWindow {
         firstWordLabel.getStyleClass().setAll("lead");
 
         /* DRUGA RIJEČ */
-        
+
         ArrayList<Label> secondWord = new ArrayList<>();
         Label labelP = new Label("P");
         labelP.getStyleClass().setAll("default-letter-example");
 
         Label labelI = new Label("I");
-        labelI.getStyleClass().setAll("default-letter-example");
+        labelI.getStyleClass().setAll("present-letter-example");
 
         secondWord.add(labelP);
         secondWord.add(labelI);
 
         for (String letter : new String[]{"L", "L", "S"}) {
-            Label label = new Label();
+            Label label = new Label(letter);
             label.getStyleClass().setAll("default-letter-example");
             secondWord.add(label);
         }
@@ -105,7 +105,7 @@ public class HelpWindow {
         thirdWord.add(labelE);
 
         HBox thirdWordVBox = new HBox(3);
-        for (Label label : thirdWord) thirdWordVBox.getChildren().setAll(label);
+        for (Label label : thirdWord) thirdWordVBox.getChildren().add(label);
 
         Label thirdWordLabel = new Label("Slovo U se ne nalazi u riječi.");
         thirdWordLabel.getStyleClass().setAll("lead");
