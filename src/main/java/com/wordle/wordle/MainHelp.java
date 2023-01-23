@@ -34,7 +34,9 @@ public class MainHelp {
 
     public static MainHelp getInstance() {
         if (INSTANCE == null)
-            INSTANCE = new com.wordle.wordle.MainHelp();
+
+            INSTANCE = new MainHelp();
+
         return INSTANCE;
     }
 
@@ -276,6 +278,7 @@ public class MainHelp {
                 CURRENT_ROW++;
                 CURRENT_COLUMN = 1;
             } else {
+
                 MainApplication.showWarning();
             }
             if (ScoreWindow.resetGame.get()) {
