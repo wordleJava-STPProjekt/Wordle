@@ -34,7 +34,7 @@ public class MainController {
 
     public void createUI() {
         createGrid();
-//        createKeyboard();
+        createKeyboard();
         createTitleHBox();
     }
 

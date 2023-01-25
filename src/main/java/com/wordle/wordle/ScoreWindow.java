@@ -35,10 +35,10 @@ public class ScoreWindow {
 
         Label mainLabel = new Label();
         if (guessed) {
-            mainLabel.setText("           Pobjedili ste! \n Točna riječ je");
+            mainLabel.setText("Pobjedili ste! \n Točna riječ je");
             mainLabel.getStyleClass().setAll("lead", "big-font");
         } else {
-            mainLabel.setText("           Izgubili ste! \n Točna riječ je");
+            mainLabel.setText("Izgubili ste! \n Točna riječ je");
             mainLabel.getStyleClass().setAll("big-font");
         }
         Label winningWordLabel = new Label(winningWord.toUpperCase());

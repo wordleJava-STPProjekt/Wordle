@@ -35,9 +35,9 @@ public class MainApplication extends Application {
 
         double screenWidth = Screen.getPrimary().getBounds().getWidth();
         double screenHeight = Screen.getPrimary().getBounds().getHeight();
-        Scene scene = new Scene(root, 1920/2, 1080/2);
-        stage.setMinWidth(1920/2);
-        stage.setMinHeight(1080/2);
+        Scene scene = new Scene(root, 1600, 900);
+        stage.setMinWidth(1600);
+        stage.setMinHeight(900);
         stage.setMaxWidth(screenWidth);
         stage.setMaxHeight(screenHeight);
 
