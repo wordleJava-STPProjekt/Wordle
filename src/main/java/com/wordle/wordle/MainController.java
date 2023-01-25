@@ -52,7 +52,7 @@ public class MainController {
 
     @FXML
     protected void onKeyPressed(KeyEvent keyEvent) {
-        mainHelp.onKeyPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow1, keyEvent);
+        mainHelp.onKeyPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow3, keyEvent);
     }
 
     public void getRandomWord() {

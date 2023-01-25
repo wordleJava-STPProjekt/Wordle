@@ -181,12 +181,15 @@ public class MainHelp {
             String currentCharacter = String.valueOf(currentWord.charAt(i - 1));
             String winningCharacter = String.valueOf(winningWord.charAt(i - 1));
 
-            if (contains(firstRowLetters, currentCharacter))
+            if (contains(firstRowLetters, currentCharacter)) {
                 keyboardLabel = getLabel(keyboardRow1, currentCharacter);
-            else if (contains(secondRowLetters, currentCharacter))
+            }
+            else if (contains(secondRowLetters, currentCharacter)) {
                 keyboardLabel = getLabel(keyboardRow2, currentCharacter);
-            else if (contains(thirdRowLetters, currentCharacter))
+            }
+            else if (contains(thirdRowLetters, currentCharacter)) {
                 keyboardLabel = getLabel(keyboardRow3, currentCharacter);
+            }
 
             if (currentCharacter.equals(winningCharacter))
                 styleClass = "keyboardCorrectColor";
